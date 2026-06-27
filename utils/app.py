@@ -2,9 +2,9 @@ import streamlit as st
 
 # Impor fungsi-fungsi dari file lokal yang telah dibuat
 import pandas as pd
-from loaders import load_all_models, load_sastrawi
-from preprocessing import preprocess_input
-from metrics import get_metrics_data
+from .loaders import load_all_models, load_sastrawi
+from .preprocessing import preprocess_input
+from .metrics import get_metrics_data
 
 # --- 1. SETTING HALAMAN UI ---
 st.set_page_config(page_title="Perbandingan Model MBG", layout="wide")
