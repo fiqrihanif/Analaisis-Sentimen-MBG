@@ -1,6 +1,10 @@
 import streamlit as st
+import sys
+import os
 
-# Impor fungsi-fungsi dari file lokal yang telah dibuat
+# Menambahkan folder 'utils' ke dalam path sistem agar import bisa ditemukan
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 import pandas as pd
 from loaders import load_all_models, load_sastrawi
 from preprocessing import preprocess_input
